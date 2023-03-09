@@ -1,0 +1,35 @@
+body{
+    background: linear-gradient(to left,white,white);
+    opacity: 1;
+}    
+.vpn_info_head{
+    margin-top: 80px;
+    border-width:2px; 
+
+    border-style:solid; border-color:black;
+    padding: 0.5em;
+     display:block;
+     line-height:8px;
+     text-align: center;
+     width:400px;
+     border-radius:10px;
+     background-color: lightgrey;
+     opacity: 1;
+     
+}
+.vpn_info_text{
+    font-size:30px;
+    color:black;
+    opacity:1;
+}
+.main_text{
+    margin-top:20px;
+    border-style:solid; border-color:black;
+    padding: 0.5em;
+     display:inline-block;
+     text-align: left;
+     width:400px;
+     border-radius:10px;
+     background-color: lightgrey;
+
+}
