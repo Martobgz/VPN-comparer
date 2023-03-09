@@ -1,41 +1,208 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-
+<style>
+.hidetext {
+  display: none;
+}
+</style>
 </head>
 <body>
-<select>
-  <option value=>Express VPN</option>
-  <option value=>Nord VPN</option>
-  <option value=>CyberGhost</option>
-  <option value=>Surfsshark VPN</option>
-  <option value=>Privateinternetaccess</option>
-  <option value=>Ipvanish VPN</option>
-  <option value=>Vyper VPN</option>
-  <option value=>Strong VPN</option>
-  <option value=>Tourguard VPN</option>
-  <option value=>Proton VPN</option>
-  <option value=>Private VPN</option>
-  <option value=>Tunel Bear</option>
-  <option value=>Windscribe VPN</option>
-  <option value=>Zenmate VPN</option>
+<select id="list">
+  <option>Choose</option>
+  <option value="Exp">Express VPN</option>
+  <option value="Nor">Nord VPN</option>
+  <option value="CG">CyberGhost</option>
+  <option value="SU">Surfsshark VPN</option>
+  <option value="PIA">Privateinternetaccess</option>
+  <option value="IP">Ipvanish VPN</option>
+  <option value="VY">Vyper VPN</option>
+  <option value="STR">Strong VPN</option>
+  <option value="TO">Tourguard VPN</option>
+  <option value="PRO">Proton VPN</option>
+  <option value="PRI">Private VPN</option>
+  <option value="TB">Tunel Bear</option>
+  <option value="WI">Windscribe VPN</option>
+  <option value="ZE">Zenmate VPN</option>
 </select>
-<select>
-  <option value=>Express VPN</option>
-  <option value=>Nord VPN</option>
-  <option value=>CyberGhost</option>
-  <option value=>Surfsshark VPN</option>
-  <option value=>Privateinternetaccess</option>
-  <option value=>Ipvanish VPN</option>
-  <option value=>Vyper VPN</option>
-  <option value=>Strong VPN</option>
-  <option value=>Tourguard VPN</option>
-  <option value=>Proton VPN</option>
-  <option value=>Private VPN</option>
-  <option value=>Tunel Bear</option>
-  <option value=>Windscribe VPN</option>
-  <option value=>Zenmate VPN</option>
+<select id="list2">
+  <option>Choose</option>
+  <option value="Exp">Express VPN</option>
+  <option value="Nor">Nord VPN</option>
+  <option value="CG">CyberGhost</option>
+  <option value="SU">Surfsshark VPN</option>
+  <option value="PIA">Privateinternetaccess</option>
+  <option value="IP">Ipvanish VPN</option>
+  <option value="VY">Vyper VPN</option>
+  <option value="STR">Strong VPN</option>
+  <option value="TO">Tourguard VPN</option>
+  <option value="PRO">Proton VPN</option>
+  <option value="PRI">Private VPN</option>
+  <option value="TB">Tunel Bear</option>
+  <option value="WI">Windscribe VPN</option>
+  <option value="ZE">Zenmate VPN</option>
 </select>
+<button onclick=GetValue()> confirm</button>
+
+<div id="Exp" class="hidetext">
+  <h1>Express VPN</h1>
+</div>
+
+<div id="Nor" class="hidetext">
+  <h1>Nord VPN</h1>
+</div>
+<div id="CG" class="hidetext">
+  <h1>CyberGhost</h1>
+</div>
+<div id="SU" class="hidetext">
+  <h1>Surfsshark VPN</h1>
+</div>
+<div id="PIA" class="hidetext">
+  <h1>Privateinternetaccess</h1>
+</div>
+<div id="IP" class="hidetext">
+  <h1>Ipvanish VPN</h1>
+</div>
+<div id="VY" class="hidetext">
+  <h1>Vyper VPN</h1>
+</div>
+<div id="STR" class="hidetext">
+  <h1>Strong VPN</h1>
+</div>
+<div id="TO" class="hidetext">
+  <h1>Tourguard VPN</h1>
+</div>
+<div id="PRO" class="hidetext">
+  <h1>Proton VPN</h1>
+</div>
+<div id="PRI" class="hidetext">
+  <h1>Private VPN</h1>
+</div>
+<div id="TB" class="hidetext">
+  <h1>Tunel Bear/h1>
+</div>
+<div id="WI" class="hidetext">
+  <h1>Windscribe VPN<</h1>
+</div>
+<div id="ZE" class="hidetext">
+  <h1>Zenmate VPN<</h1>
+</div>
+<script>
+function GetValue() {
+      document.getElementById("Exp").style.display = "none";
+      document.getElementById("Nor").style.display = "none";
+      document.getElementById("CG").style.display = "none";
+      document.getElementById("SU").style.display = "none";
+      document.getElementById("PIA").style.display = "none";
+      document.getElementById("IP").style.display = "none"
+      document.getElementById("VY").style.display = "none";
+      document.getElementById("STR").style.display = "none";
+      document.getElementById("TO").style.display = "none";
+      document.getElementById("IP").style.display = "none";
+      document.getElementById("PRO").style.display = "none";
+      document.getElementById("PRI").style.display = "none";
+      document.getElementById("PRI").style.display = "none";
+      document.getElementById("WI").style.display = "none";
+      document.getElementById("ZE").style.display = "none";
+  var vpn1 = document.getElementById("list").value;
+  var vpn2 = document.getElementById("list2").value;
+
+  switch (vpn1) {
+    case "Exp":
+      document.getElementById("Exp").style.display = "block";
+      break;
+    case "Nor":
+      document.getElementById("Nor").style.display = "block";
+      break;
+    case "CG":
+      document.getElementById("CG").style.display = "block";
+      break;
+    case "SU":
+      document.getElementById("SU").style.display = "block";
+      break;
+    case "PIA":
+      document.getElementById("PIA").style.display = "block";
+      break;
+    case "IP":
+      document.getElementById("IP").style.display = "block";
+      break;
+    case "VY":
+      document.getElementById("VY").style.display = "block";
+      break;
+    case "STR":
+      document.getElementById("STR").style.display = "block";
+      break;
+    case "TO":
+      document.getElementById("TO").style.display = "block";
+      break;
+    case "IP":
+      document.getElementById("IP").style.display = "block";
+      break;
+    case "PRO":
+      document.getElementById("PRO").style.display = "block";
+      break;
+    case "PRI":
+      document.getElementById("PRI").style.display = "block";
+      break;
+    case "TB":
+      document.getElementById("PRI").style.display = "block";
+      break;
+    case "WI":
+      document.getElementById("WI").style.display = "block";
+      break;
+    case "ZE":
+      document.getElementById("ZE").style.display = "block";
+      break; 
+  }
+  switch (vpn2) {
+    case "Exp":
+      document.getElementById("Exp").style.display = "block";
+      break;
+    case "Nor":
+      document.getElementById("Nor").style.display = "block";
+      break;
+    case "CG":
+      document.getElementById("CG").style.display = "block";
+      break;
+    case "SU":
+      document.getElementById("SU").style.display = "block";
+      break;
+    case "PIA":
+      document.getElementById("PIA").style.display = "block";
+      break;
+    case "IP":
+      document.getElementById("IP").style.display = "block";
+      break;
+    case "VY":
+      document.getElementById("VY").style.display = "block";
+      break;
+    case "STR":
+      document.getElementById("STR").style.display = "block";
+      break;
+    case "TO":
+      document.getElementById("TO").style.display = "block";
+      break;
+    case "IP":
+      document.getElementById("IP").style.display = "block";
+      break;
+    case "PRO":
+      document.getElementById("PRO").style.display = "block";
+      break;
+    case "PRI":
+      document.getElementById("PRI").style.display = "block";
+      break;
+    case "TB":
+      document.getElementById("PRI").style.display = "block";
+      break;
+    case "WI":
+      document.getElementById("WI").style.display = "block";
+      break;
+    case "ZE":
+      document.getElementById("ZE").style.display = "block";
+      break; 
+  }
+}
+</script>
+
 </body>
 </html>
