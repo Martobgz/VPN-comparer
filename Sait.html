@@ -12,7 +12,6 @@
   display: none;
   z-index: 1;
 }
-.dropdown-contenta {display: block;}
 .show1 {display: block;}
 </style>
 </head>
@@ -25,6 +24,8 @@
     <a >VPN 3</a>
   </div>
 </div>
+
+
 <div class="dropdown1">
     <button onclick="activateclick1()" class="dropbtn1">Dropdown</button>
     <div id="dropdown1" class="dropdown-content1">
@@ -57,10 +58,10 @@ window.onclick = function(event1) {
   if (!event1.target.matches('.dropbtn1')) {
     var dropdowns1 = document.getElementsByClassName("dropdown-content1");
     var i1;
-    for (i1 = 0; i1 < dropdowns.length; i1++) {
-      var openDropdown = dropdowns[i1];
-      if (openDropdown.classList.contains('show1')) {
-        openDropdown.classList.remove('show1');
+    for (i1 = 0; i1 < dropdowns1.length; i1++) {
+      var openDropdown1 = dropdowns1[i1];
+      if (openDropdown1.classList.contains('show1')) {
+        openDropdown1.classList.remove('show1');
       }
     }
   }
