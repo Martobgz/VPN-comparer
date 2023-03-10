@@ -46,26 +46,32 @@ document.querySelector('.title_left').textContent = data1[0];
 document.querySelector('.title_right').textContent = data2[0];
 
 document.querySelector('.content_left .secutiry_fillment').style.width = data1[1] + '0%';
-if (data1[1]<3) {document.querySelector('.content_left .secutiry_fillment').style.backgroundColor = "red";}
+if (data1[1]<=3) {document.querySelector('.content_left .secutiry_fillment').style.backgroundColor = "red";}
+else if (data1[1]<=6) {document.querySelector('.content_left  .secutiry_fillment').style.backgroundColor = "yellow";}
 else {document.querySelector('.content_left .secutiry_fillment').style.backgroundColor = "green";}
 
 document.querySelector('.content_left .intspeed_fillment').style.width = data1[2] + '0%';
-if (data1[2]<3) {document.querySelector('.content_left .intspeed_fillment').style.backgroundColor = "red";console.log("red");}
+if (data1[2]<=3) {document.querySelector('.content_left .intspeed_fillment').style.backgroundColor = "red";console.log("red");}
+else if (data1[2]<=6) {document.querySelector('.content_left  .intspeed_fillment').style.backgroundColor = "yellow";}
 else {document.querySelector('.content_left .intspeed_fillment').style.backgroundColor = "green";}
 
 document.querySelector('.content_left .num_of_servers_fillment').style.width = data1[3] + '0%';
-if (data1[3]<3) {document.querySelector('.content_left .num_of_servers_fillment').style.backgroundColor = "red";}
+if (data1[3]<=3) {document.querySelector('.content_left .num_of_servers_fillment').style.backgroundColor = "red";}
+else if (data1[3]<=6) {document.querySelector('.content_left  .num_of_servers_fillment').style.backgroundColor = "yellow";}
 else {document.querySelector('.content_left .num_of_servers_fillment').style.backgroundColor = "green";}
 
 document.querySelector('.content_right .secutiry_fillment').style.width = data2[1] + '0%';
-if (data2[1]<3) {document.querySelector('.content_right .secutiry_fillment').style.backgroundColor = "red";}
+if (data2[1]<=3) {document.querySelector('.content_right .secutiry_fillment').style.backgroundColor = "red";}
+else if (data2[1]<=6) {document.querySelector('.content_right  .secutiry_fillment').style.backgroundColor = "yellow";}
 else {document.querySelector('.content_right  .secutiry_fillment').style.backgroundColor = "green";}
 
 document.querySelector('.content_right .intspeed_fillment').style.width = data2[2] + '0%';
-if (data2[2]<3) {document.querySelector('.content_right  .intspeed_fillment').style.backgroundColor = "red";}
-else {document.querySelector('.content_right  intspeed_fillment').style.backgroundColor = "green";}
+if (data2[2]<=3) {document.querySelector('.content_right  .intspeed_fillment').style.backgroundColor = "red";}
+else if (data2[2]<=6) {document.querySelector('.content_right  .intspeed_fillment').style.backgroundColor = "yellow";}
+else {document.querySelector('.content_right  .intspeed_fillment').style.backgroundColor = "green";}
 
 document.querySelector('.content_right .num_of_servers_fillment').style.width = data2[3] + '0%';
-if (data2[3]<3) {document.querySelector('.content_right  .num_of_servers_fillment').style.backgroundColor = "red";}
+if (data2[3]<=3) {document.querySelector('.content_right  .num_of_servers_fillment').style.backgroundColor = "red";}
+else if (data2[3]<=6) {document.querySelector('.content_right  .num_of_servers_fillment').style.backgroundColor = "yellow";}
 else {document.querySelector('.content_right  .num_of_servers_fillment').style.backgroundColor = "green";}
 } 
