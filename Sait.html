@@ -3,10 +3,10 @@
 
 <head>
   <link rel="stylesheet" href="main_styles.css">
-    <link rel="stylesheet" href="arrow.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="arrow.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,100&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="comparison.css">
   <script src="Coparison.js"></script>
   <link rel="stylesheet" href="comparison.css">
@@ -17,50 +17,7 @@
   <div>
     <p><a href="main_styles.html"><img class="logo_size" src="logo_5.png"></a></p>
 </div>
-<select id="list" onchange=Hide()>
-  <option>Choose</option>
-  <option value="Exp">Express VPN</option>
-  <option value="Nor">Nord VPN</option>
-  <option value="CG">CyberGhost</option>
-  <option value="SU">Surfsshark VPN</option>
-  <option value="PIA">Privateinternetaccess</option>
-  <option value="IP">Ipvanish VPN</option>
-  <option value="VY">Vyper VPN</option>
-  <option value="STR">Strong VPN</option>
-  <option value="TО">Tourguard VPN</option>
-  <option value="PRO">Proton VPN</option>
-  <option value="PRI">Private VPN</option>
-  <option value="TB">Tunel Bear</option>
-  <option value="WI">Windscribe VPN</option>
-  <option value="ZE">Zenmate VPN</option>
-  <option value="BSM">Bittium SafeMode Mobile VPN</option>
-  <option value="RIPS">Radio IP software</option>
-  <option value="WIN">Windscribe</option>
-  <option value="P81">Perimeter81</option>
-  <option value="NL">NordLayer</option>
-</select>
-<select id="list2" onchange=Hide2()>
-  <option>Choose</option>
-  <option value="Exp">Express VPN</option>
-  <option value="Nor">Nord VPN</option>
-  <option value="CG">CyberGhost</option>
-  <option value="SU">Surfsshark VPN</option>
-  <option value="PIA">Privateinternetaccess</option>
-  <option value="IP">Ipvanish VPN</option>
-  <option value="VY">Vyper VPN</option>
-  <option value="STR">Strong VPN</option>
-  <option value="TO">Tourguard VPN</option>
-  <option value="PRO">Proton VPN</option>
-  <option value="PRI">Private VPN</option>
-  <option value="TB">Tunel Bear</option>
-  <option value="WI">Windscribe VPN</option>
-  <option value="ZE">Zenmate VPN</option>
-  <option value="BSM">Bittium SafeMode Mobile VPN</option>
-  <option value="RIPS">Radio IP software</option>
-  <option value="WIN">Windscribe</option>
-  <option value="P81">Perimeter81</option>
-  <option value="NL">NordLayer</option>
-</select>
+
 
 <button class="sait_button" onclick=GetValue()> compare</button>
 <div class="comparison_content">
@@ -79,101 +36,171 @@
       <div class="separator"></div>
       <div class="separator"></div>
     </div>
-  </div>
-  <div class="row"><div class="int_speed_p">Internet Speed</div>
-    <div class="internet_speed_graph">
-      <div class="intspeed_fillment"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
+    <div class="whole">
+    <div class="without_logo">
+      <select id="list" onchange=Hide()>
+        <option>Choose</option>
+        <option value="Exp">Express VPN</option>
+        <option value="Nor">Nord VPN</option>
+        <option value="CG">CyberGhost</option>
+        <option value="SU">Surfsshark VPN</option>
+        <option value="PIA">Privateinternetaccess</option>
+        <option value="IP">Ipvanish VPN</option>
+        <option value="VY">Vyper VPN</option>
+        <option value="STR">Strong VPN</option>
+        <option value="TO">Tourguard VPN</option>
+        <option value="PRO">Proton VPN</option>
+        <option value="PRI">Private VPN</option>
+        <option value="TB">Tunel Bear</option>
+        <option value="WI">Windscribe VPN</option>
+        <option value="ZE">Zenmate VPN</option>
+        <option value="BSM">Bittium SafeMode Mobile VPN</option>
+        <option value="RIPS">Radio IP software</option>
+        <option value="WIN">Windscribe</option>
+        <option value="P81">Perimeter81</option>
+        <option value="NL">NordLayer</option>
+      </select>
+      <select id="list2" onchange=Hide2()>
+        <option>Choose</option>
+        <option value="Exp">Express VPN</option>
+        <option value="Nor">Nord VPN</option>
+        <option value="CG">CyberGhost</option>
+        <option value="SU">Surfsshark VPN</option>
+        <option value="PIA">Privateinternetaccess</option>
+        <option value="IP">Ipvanish VPN</option>
+        <option value="VY">Vyper VPN</option>
+        <option value="STR">Strong VPN</option>
+        <option value="TO">Tourguard VPN</option>
+        <option value="PRO">Proton VPN</option>
+        <option value="PRI">Private VPN</option>
+        <option value="TB">Tunel Bear</option>
+        <option value="WI">Windscribe VPN</option>
+        <option value="ZE">Zenmate VPN</option>
+        <option value="BSM">Bittium SafeMode Mobile VPN</option>
+        <option value="RIPS">Radio IP software</option>
+        <option value="WIN">Windscribe</option>
+        <option value="P81">Perimeter81</option>
+        <option value="NL">NordLayer</option>
+      </select>
+      
+      <button class="sait_button" onclick=GetValue()> compare</button>
     </div>
-  </div>
-  <div class="row"><div class="num_of_ser_p">Number of Servers</div>
-    <div class="number_of_servers_graph">
-      <div class="num_of_servers_fillment"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
+      <div class="comparison_content">
+        <div class="content_wrapper content_left">
+          <div class="title_left"></div>
+          <div class="row">
+            <div class="security_p">Security</div>
+            <div class="security_graph">
+              <div class="secutiry_fillment"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="int_speed_p">Internet Speed</div>
+            <div class="internet_speed_graph">
+              <div class="intspeed_fillment"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="num_of_ser_p">Number of Servers</div>
+            <div class="number_of_servers_graph">
+              <div class="num_of_servers_fillment"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content_wrapper content_right">
+          <div class="title_right"></div>
+          <div class="row">
+            <div class="security_p">Security</div>
+            <div class="security_graph">
+              <div class="secutiry_fillment"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="int_speed_p">Internet Speed</div>
+            <div class="internet_speed_graph">
+              <div class="intspeed_fillment"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="num_of_ser_p">Number of Servers</div>
+            <div class="number_of_servers_graph">
+              <div class="num_of_servers_fillment"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-
-<div class="content_wrapper content_right">
-  <div class="title_right"></div>
-  <div class="row"><div class="security_p">Secuity</div>
-    <div class="security_graph">
-      <div class="secutiry_fillment"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-    </div>
-  </div>
-  <div class="row"><div class="int_speed_p">Internet Speed</div>
-    <div class="internet_speed_graph">
-      <div class="intspeed_fillment"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-    </div>
-  </div>
-  <div class="row"><div class="num_of_ser_p">Number of Servers</div>
-    <div class="number_of_servers_graph">
-      <div class="num_of_servers_fillment"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-      <div class="separator"></div>
-    </div>
-  </div>
-</div>
-</div>
-
-
-
-
-<div class="tut">
+  <div class="tut">
     <p class="termin_size"><span class="tut_size">Step by step tutorial:</span>
-        <br> 1: Click the first drop menu and select your first VPN to compare, do the same for the second.
-        <br> 2: Click the "Compare" button.
+      <br> 1: Click the first drop menu and select your first VPN to compare, do the same for the second.
+      <br> 2: Click the "Compare" button.
 
     </p>
-</div>
-<div class="termin">
-    <p  class="termin_size"><span class="definition">Definitions</span>
-    <br>&#x2022; <span style="font-weight: bold;">Internet speed</span>-by routing your internet traffic through a VPN, you can bypass any content- or user-specific speed limitations imposed by your internet service provider.
-    <br>&#x2022; <span style="font-weight: bold;">Number of servers</span>-VPN allows you to connect to your chosen server almost anywhere in the world, wherever the VPN you’ve chosen has servers.
-    <br>&#x2022; <span style="font-weight: bold;">Encryption quality</span>-the conversion of data from a readable format into an encoded format.
+  </div>
+  <div class="termin">
+    <p class="termin_size"><span class="definition">Definitions</span>
+      <br>&#x2022; <span style="font-weight: bold;">Internet speed</span>-by routing your internet traffic through a
+      VPN, you can bypass any content- or user-specific speed limitations imposed by your internet service provider.
+      <br>&#x2022; <span style="font-weight: bold;">Number of servers</span>-VPN allows you to connect to your chosen
+      server almost anywhere in the world, wherever the VPN you’ve chosen has servers.
+      <br>&#x2022; <span style="font-weight: bold;">Test</span>-test
     </p>
-</div>
+  </div>
 </body>
 
 </html>
