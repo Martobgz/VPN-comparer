@@ -14,7 +14,7 @@
   <option value="Nor">Nord VPN</option>
   <option value="CG">CyberGhost</option>
   <option value="SU">Surfsshark VPN</option>
-  <option value="PIA">Privateinternetaccess</option>
+  <option value="PIA"> Privateinternetaccess</option> //hidden
   <option value="IP">Ipvanish VPN</option>
   <option value="VY">Vyper VPN</option>
   <option value="STR">Strong VPN</option>
@@ -27,7 +27,7 @@
 </select>
 <select id="list2">
   <option>Choose</option>
-  <option value="Exp">Express VPN</option>
+  <option onchange=Hide() value="Exp">Express VPN</option>
   <option value="Nor">Nord VPN</option>
   <option value="CG">CyberGhost</option>
   <option value="SU">Surfsshark VPN</option>
@@ -43,7 +43,13 @@
   <option value="ZE">Zenmate VPN</option>
 </select>
 <button onclick=GetValue()> confirm</button>
-
+<script>
+function Hide()
+{
+ var hide =document.getElementById("list2").value;
+ console.log(hide);
+}
+</script>
 <div id="Exp" class="hidetext">
   <h1>Express VPN</h1>
 </div>
@@ -79,13 +85,13 @@
   <h1>Private VPN</h1>
 </div>
 <div id="TB" class="hidetext">
-  <h1>Tunel Bear/h1>
+  <h1>Tunel Bear</h1>
 </div>
 <div id="WI" class="hidetext">
-  <h1>Windscribe VPN<</h1>
+  <h1>Windscribe VPN</h1>
 </div>
 <div id="ZE" class="hidetext">
-  <h1>Zenmate VPN<</h1>
+  <h1>Zenmate VPN</h1>
 </div>
 <script>
 function GetValue() {
@@ -94,7 +100,7 @@ function GetValue() {
       document.getElementById("CG").style.display = "none";
       document.getElementById("SU").style.display = "none";
       document.getElementById("PIA").style.display = "none";
-      document.getElementById("IP").style.display = "none"
+      document.getElementById("IP").style.display = "none";
       document.getElementById("VY").style.display = "none";
       document.getElementById("STR").style.display = "none";
       document.getElementById("TO").style.display = "none";
@@ -145,7 +151,7 @@ function GetValue() {
       document.getElementById("PRI").style.display = "block";
       break;
     case "TB":
-      document.getElementById("PRI").style.display = "block";
+      document.getElementById("TB").style.display = "block";
       break;
     case "WI":
       document.getElementById("WI").style.display = "block";
