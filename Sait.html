@@ -10,11 +10,11 @@
 <body>
 <select id="list" onchange=Hide()>
   <option>Choose</option>
-  <option value="Exp" >Express VPN</option>
+  <option value="Exp">Express VPN</option>
   <option value="Nor">Nord VPN</option>
   <option value="CG">CyberGhost</option>
   <option value="SU">Surfsshark VPN</option>
-  <option value="PIA"> Privateinternetaccess</option> //hidden
+  <option value="PIA">Privateinternetaccess</option>
   <option value="IP">Ipvanish VPN</option>
   <option value="VY">Vyper VPN</option>
   <option value="STR">Strong VPN</option>
@@ -24,6 +24,11 @@
   <option value="TB">Tunel Bear</option>
   <option value="WI">Windscribe VPN</option>
   <option value="ZE">Zenmate VPN</option>
+  <option value="BSM">Bittium SafeMode Mobile VPN</option>
+  <option value="RIPS">Radio IP software</option>
+  <option value="WIN">Windscribe</option>
+  <option value="P81">Perimeter81</option>
+  <option value="NL">NordLayer</option>
 </select>
 <select id="list2" onchange=Hide2()>
   <option>Choose</option>
@@ -41,6 +46,11 @@
   <option value="TB">Tunel Bear</option>
   <option value="WI">Windscribe VPN</option>
   <option value="ZE">Zenmate VPN</option>
+  <option value="BSM">Bittium SafeMode Mobile VPN</option>
+  <option value="RIPS">Radio IP software</option>
+  <option value="WIN">Windscribe</option>
+  <option value="P81">Perimeter81</option>
+  <option value="NL">NordLayer</option>
 </select>
 <script>
 
@@ -112,6 +122,21 @@ function Hide()
 <div id="ZE" class="hidetext">
   <h1>Zenmate VPN</h1>
 </div>
+<div id="BSM" class="hidetext">
+  <h1>Bittium SafeMode Mobile VPN</h1>
+</div>
+<div id="RIPS" class="hidetext">
+  <h1>Radio IP software</h1>
+</div>
+<div id="WIN" class="hidetext">
+  <h1>Windscribe</h1>
+</div>
+<div id="P81" class="hidetext">
+  <h1>Perimeter81</h1>
+</div>
+<div id="NL" class="hidetext">
+  <h1>NordLayer</h1>
+</div>
 <script>
 function GetValue() {
       document.getElementById("Exp").style.display = "none";
@@ -129,6 +154,11 @@ function GetValue() {
       document.getElementById("PRI").style.display = "none";
       document.getElementById("WI").style.display = "none";
       document.getElementById("ZE").style.display = "none";
+      document.getElementById("BSM").style.display = "none";
+      document.getElementById("RIPS").style.display = "none";
+      document.getElementById("WIN").style.display = "none";
+      document.getElementById("P81").style.display = "none";
+      document.getElementById("NL").style.display = "none";
   var vpn1 = document.getElementById("list").value;
   var vpn2 = document.getElementById("list2").value;
 
@@ -178,6 +208,18 @@ function GetValue() {
     case "ZE":
       document.getElementById("ZE").style.display = "block";
       break; 
+    case "BSM":
+      document.getElementById("BSM").style.display = "block";
+      break; 
+      case "RIPS":
+      document.getElementById("RIPS").style.display = "block";
+      break; 
+      case "WIN":
+      document.getElementById("WIN").style.display = "block";
+      break; 
+      case "NL":
+      document.getElementById("NL").style.display = "block";
+      break; 
   }
   switch (vpn2) {
     case "Exp":
@@ -217,13 +259,25 @@ function GetValue() {
       document.getElementById("PRI").style.display = "block";
       break;
     case "TB":
-      document.getElementById("PRI").style.display = "block";
+      document.getElementById("TB").style.display = "block";
       break;
     case "WI":
       document.getElementById("WI").style.display = "block";
       break;
     case "ZE":
       document.getElementById("ZE").style.display = "block";
+      break; 
+    case "BSM":
+      document.getElementById("BSM").style.display = "block";
+      break; 
+      case "RIPS":
+      document.getElementById("RIPS").style.display = "block";
+      break; 
+      case "WIN":
+      document.getElementById("WIN").style.display = "block";
+      break; 
+      case "NL":
+      document.getElementById("NL").style.display = "block";
       break; 
   }
 }
