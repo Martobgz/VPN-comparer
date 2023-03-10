@@ -1,35 +1,156 @@
-body{
-    background: linear-gradient(to left,white,white);
-    opacity: 1;
-}    
-.vpn_info_head{
-    margin-top: 80px;
-    border-width:2px; 
 
-    border-style:solid; border-color:black;
-    padding: 0.5em;
-     display:block;
-     line-height:8px;
-     text-align: center;
-     width:400px;
-     border-radius:10px;
-     background-color: lightgrey;
-     opacity: 1;
-     
+    
+
+.whole{
+ display:grid;
+ grid-template-rows: 1fr;
+ background: linear-gradient(to top,mediumpurple,purple);
 }
-.vpn_info_text{
-    font-size:30px;
-    color:black;
-    opacity:1;
+.main_text_expl{
+    color:white;
+    font-family:'Barlow', sans-serif;
+    margin-left:45px;
+    margin-top: 10px;
+    font-size: 35px;
+    margin-bottom:0;
+}
+.logo_header_compare{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.grid_logo{
+    margin-top:70px;
+    min-height:105vh;
+    width:100%;
+    display:grid;
+    
+    align-items:left;
+    justify-content: left;
+    margin-right:0;
+}
+.logo_pic{
+    margin-top: 40px;
+    margin-left:0;
+    
+}
+.logo{
+    height:550px;
+    
+}
+
+
+.header_text_1{
+    font-family:'Barlow', sans-serif;
+    font-weight: bold;
+    color:white;
+    font-size:70px;
+    line-height:2px;
+    margin-left:45px;
+}
+.header_text_2{
+    font-family:'Barlow', sans-serif;
+    font-weight: bold;
+    color:white;
+    font-size:70px;
+    line-height:2px;
+    margin-left:45px;
 }
 .main_text{
-    margin-top:20px;
-    border-style:solid; border-color:black;
-    padding: 0.5em;
-     display:inline-block;
-     text-align: left;
-     width:400px;
-     border-radius:10px;
-     background-color: lightgrey;
+    font-family:'Barlow', sans-serif;
+    color:white;
+    margin-left:45px;
+    width:500px;
+    line-height:30px;
+    font-size: 25px;
 
 }
+.compare_button_div{
+    margin-left:45px;
+    
+    display:inline-block;
+    margin-bottom: 20px;
+    
+}
+.compare_button{
+    background-color:black;
+    font-size: 23px;
+    padding-left:14px ;
+    padding-right:14px;
+    padding-top:3px;
+    padding-bottom:3px;
+    border:none;  
+    border-radius: 3px;  
+    color:white;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+.compare_button:hover{
+    opacity: 0.8;
+}
+.compare_button:active{
+    opacity:0.6;
+}
+body {
+    background-color: #322B2B;
+}
+.devision_whole{
+    text-align: center;
+    
+    
+}
+.division_intro{
+    font-family:'Barlow', sans-serif;
+    color:white;
+    margin-top: 70px;
+    margin-left:45px;
+    font-size:20px;
+    font-weight: bold;
+    text-align: center;
+    display:block;
+}
+.vpn_division{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.category_1{
+    text-align: center;
+    margin-left: 370px;
+    margin-top: 30px;
+    width:300px;
+    align-items: center;
+    color:white;
+    font-size: 30px;
+}
+.personal_use{
+    font-size: 30px;
+    color: white;
+   
+}
+.category_2{
+   text-align: center;
+    margin-top: 30px;
+    margin-right:300px;
+    margin-left:30px;
+    
+    color:white;
+    font-size:30px;
+    
+}
+.buisness_use{
+    color: white;
+}
+.personal_use_list{
+    color:white;
+}
+
+
+
+
+
+
+    
+    
+    
+
+
+
