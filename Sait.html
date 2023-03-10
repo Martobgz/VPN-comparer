@@ -2,6 +2,12 @@
 <html>
 
 <head>
+  <link rel="stylesheet" href="main_styles.css">
+    <link rel="stylesheet" href="arrow.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="comparison.css">
   <style>
     .hidetext {
       display: none;
@@ -15,7 +21,7 @@
   <div>
     <p><a href="main_styles.html"><img class="logo_size" src="logo_5.png"></a></p>
 </div>
-<select id="list" onchange=Hide()>
+<select  class="list1" id="list" onchange=Hide()>
   <option>Choose</option>
   <option value="Exp">Express VPN</option>
   <option value="Nor">Nord VPN</option>
@@ -32,7 +38,7 @@
   <option value="WI">Windscribe VPN</option>
   <option value="ZE">Zenmate VPN</option>
 </select>
-<select id="list2" onchange=Hide2()>
+<select class="list_2" id="list2" onchange=Hide2()>
   <option>Choose</option>
   <option value="Exp">Express VPN</option>
   <option value="Nor">Nord VPN</option>
@@ -70,11 +76,11 @@
     }
   }
 </script>
-<button class="" onclick=GetValue()> confirm</button>
+<button class="sait_button" onclick=GetValue()> compare</button>
 <div class="comparison_content">
 <div class="content_wrapper content_left">
   <div class="title_left"></div>
-  <div class="row">
+  <div class="row"><div class="security_p">Secuity</div>
     <div class="security_graph">
       <div class="secutiry_fillment"></div>
       <div class="separator"></div>
@@ -88,9 +94,9 @@
       <div class="separator"></div>
     </div>
   </div>
-  <div class="row">
+  <div class="row"><div class="int_speed_p">Internet Speed</div>
     <div class="internet_speed_graph">
-      <div class="secutiry_fillment"></div>
+      <div class="intspeed_fillment"></div>
       <div class="separator"></div>
       <div class="separator"></div>
       <div class="separator"></div>
@@ -102,9 +108,9 @@
       <div class="separator"></div>
     </div>
   </div>
-  <div class="row">
+  <div class="row"><div class="num_of_ser_p">Number of Servers</div>
     <div class="number_of_servers_graph">
-      <div class="secutiry_fillment"></div>
+      <div class="num_of_servers_fillment"></div>
       <div class="separator"></div>
       <div class="separator"></div>
       <div class="separator"></div>
@@ -120,7 +126,7 @@
 
 <div class="content_wrapper content_right">
   <div class="title_right"></div>
-  <div class="row">
+  <div class="row"><div class="security_p">Secuity</div>
     <div class="security_graph">
       <div class="secutiry_fillment"></div>
       <div class="separator"></div>
@@ -134,9 +140,9 @@
       <div class="separator"></div>
     </div>
   </div>
-  <div class="row">
+  <div class="row"><div class="int_speed_p">Internet Speed</div>
     <div class="internet_speed_graph">
-      <div class="secutiry_fillment"></div>
+      <div class="intspeed_fillment"></div>
       <div class="separator"></div>
       <div class="separator"></div>
       <div class="separator"></div>
@@ -148,9 +154,9 @@
       <div class="separator"></div>
     </div>
   </div>
-  <div class="row">
+  <div class="row"><div class="num_of_ser_p">Number of Servers</div>
     <div class="number_of_servers_graph">
-      <div class="secutiry_fillment"></div>
+      <div class="num_of_servers_fillment"></div>
       <div class="separator"></div>
       <div class="separator"></div>
       <div class="separator"></div>
