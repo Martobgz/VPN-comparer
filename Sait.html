@@ -10,7 +10,7 @@
 <body>
 <select id="list">
   <option>Choose</option>
-  <option value="Exp">Express VPN</option>
+  <option value="Exp" >Express VPN</option>
   <option value="Nor">Nord VPN</option>
   <option value="CG">CyberGhost</option>
   <option value="SU">Surfsshark VPN</option>
@@ -25,9 +25,9 @@
   <option value="WI">Windscribe VPN</option>
   <option value="ZE">Zenmate VPN</option>
 </select>
-<select id="list2">
+<select id="list2" onchange=Hide2()>
   <option>Choose</option>
-  <option onchange=Hide() value="Exp">Express VPN</option>
+  <option value="Exp">Express VPN</option>
   <option value="Nor">Nord VPN</option>
   <option value="CG">CyberGhost</option>
   <option value="SU">Surfsshark VPN</option>
@@ -42,14 +42,23 @@
   <option value="WI">Windscribe VPN</option>
   <option value="ZE">Zenmate VPN</option>
 </select>
-<button onclick=GetValue()> confirm</button>
 <script>
-function Hide()
+
+function Hide2()
 {
- var hide =document.getElementById("list2").value;
- console.log(hide);
+ var hide2 =document.getElementById("list2").selectedIndex;
+ console.log (hide2);
+ if(hide2 != ''){
+  for(var i=0;i<list.length;i++)
+  {
+    document.getElementById("list").options[i].disabled=false;
+  }
+  document.getElementById("list").options[hide2].disabled=true
+ }
 }
 </script>
+<button onclick=GetValue()> confirm</button>
+
 <div id="Exp" class="hidetext">
   <h1>Express VPN</h1>
 </div>
