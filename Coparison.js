@@ -17,7 +17,7 @@
     }
   }
 var vpnlist = [];
- vpnlist["Exp"] = ['Express VPN',"security" , "Internet_speed","number of servers"];
+ vpnlist["Exp"] = ['Express VPN',6 , 8,10];
  vpnlist["Nor"]=['Nord VPN',"security" , "Internet_speed","number of servers"];
  vpnlist["CG"]=['CyberGhost',"security" , "Internet_speed","number of servers"];
  vpnlist["SU"]=['Surfsshark VPN',"security" , "Internet_speed","number of servers"];
