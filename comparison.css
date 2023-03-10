@@ -1,0 +1,41 @@
+.security_graph,
+.internet_speed_graph,
+.number_of_servers_graph {
+    width: 350px;
+    height: 30px;
+    border: 1px solid;
+    position: relative;
+    
+}
+.internet_speed_graph,
+.number_of_servers_graph {
+    margin-top:30px;
+}
+.secutiry_fillment {
+    background: red;
+    height: 100%;
+    width: 30%;
+    position: absolute;
+}
+
+.Express {
+    display: block;
+}
+
+.separator {
+    width: 31px;
+    border-right: 1px dotted;
+    height: 100%;
+    display: inline-block;
+    z-index: 2;
+    position: relative;
+}
+
+.comparison_content {
+    display: flex;
+    gap: 40px;
+}
+.content_wrapper{
+    padding:10px;
+    border:2px solid black;
+}
