@@ -1,28 +1,29 @@
 
     
-
-.whole{
- display:grid;
- grid-template-rows: 1fr;
- background: linear-gradient(to top,mediumpurple,purple);
+body{
+    margin: 0;
+    background: linear-gradient(to top,mediumpurple,purple);
 }
+
 .main_text_expl{
     color:white;
     font-family:'Barlow', sans-serif;
-    margin-left:45px;
+    margin-left:90px;
     margin-top: 10px;
     font-size: 35px;
     margin-bottom:0;
+    height: 30px;
+    margin-bottom: 30px;
 }
 .logo_header_compare{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
 }
 .grid_logo{
     margin-top:70px;
-    min-height:105vh;
+    min-height:75vh;
     width:100%;
-    display:grid;
+    
+    
     
     align-items:left;
     justify-content: left;
@@ -34,55 +35,45 @@
     
 }
 .logo{
-    height:550px;
+    height: 850px;
     
 }
 
 
-.header_text_1{
-    font-family:'Barlow', sans-serif;
-    font-weight: bold;
-    color:white;
-    font-size:70px;
-    line-height:2px;
-    margin-left:45px;
-}
-.header_text_2{
-    font-family:'Barlow', sans-serif;
-    font-weight: bold;
-    color:white;
-    font-size:70px;
-    line-height:2px;
-    margin-left:45px;
-}
+
 .main_text{
     font-family:'Barlow', sans-serif;
     color:white;
-    margin-left:45px;
-    width:500px;
+    margin-left:90px;
+    width:650px;
     line-height:30px;
     font-size: 25px;
+    margin-bottom: 50px;
+    margin-top: 0;
 
 }
+
 .compare_button_div{
     margin-left:45px;
-    
-    display:inline-block;
+    display: flex;
+    height: fit-content;
     margin-bottom: 20px;
+    justify-content: center;
     
 }
 .compare_button{
     background-color:black;
-    font-size: 23px;
+    font-size: 38px;
     padding-left:14px ;
     padding-right:14px;
-    padding-top:3px;
-    padding-bottom:3px;
+    padding-top:5px;
+    padding-bottom:5px;
     border:none;  
-    border-radius: 3px;  
+    border-radius: 5px;  
     color:white;
     cursor: pointer;
     transition: opacity 0.15s;
+
 }
 .compare_button:hover{
     opacity: 0.8;
@@ -109,14 +100,15 @@ body {
     display:block;
 }
 .vpn_division{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    
 }
-.category_1{
+.category{
     text-align: center;
-    margin-left: 370px;
+    /* margin-left: 370px; */
     margin-top: 30px;
-    width:300px;
+    width:20%;
     align-items: center;
     color:white;
     font-size: 30px;
@@ -126,12 +118,12 @@ body {
     color: white;
    
 }
-.category_2{
+.category{
    text-align: center;
     margin-top: 30px;
-    margin-right:300px;
+    /* margin-right:300px; */
     margin-left:30px;
-    
+    width:300px;
     color:white;
     font-size:30px;
     
@@ -141,6 +133,19 @@ body {
 }
 .personal_use_list{
     color:white;
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+a{
+    font-family:'Barlow', sans-serif;
+}
+a{
+    
 }
 
 
