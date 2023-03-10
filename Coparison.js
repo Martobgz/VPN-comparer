@@ -17,39 +17,55 @@
     }
   }
 var vpnlist = [];
- vpnlist["Exp"] = ['Express VPN',6 , 8,10];
- vpnlist["Nor"]=['Nord VPN',"security" , "Internet_speed","number of servers"];
- vpnlist["CG"]=['CyberGhost',"security" , "Internet_speed","number of servers"];
- vpnlist["SU"]=['Surfsshark VPN',"security" , "Internet_speed","number of servers"];
- vpnlist["PIA"]=[' Privateinternetaccess',"security" , "Internet_speed","number of servers"];
- vpnlist["IP"]=['Ipvanish VPN',"security" , "Internet_speed","number of servers"];
- vpnlist["VY"]=['Vyper VPN',"security" , "Internet_speed","number of servers"];
- vpnlist["STR"]=['Strong VPN',"security" , "Internet_speed","number of servers"];
- vpnlist["TO"]=['Tourguard VPN',"security" , "Internet_speed","number of servers"];
- vpnlist["PRO"]=['Proton VPN',"security" , "Internet_speed","number of servers"];
- vpnlist["PRI"]=['Private VPN',"security" , "Internet_speed","number of servers"];
- vpnlist["TB"]=['Tunel Bear',"security" , "Internet_speed","number of servers"];
- vpnlist["WI"]=['Windscribe VPN',"security" , "Internet_speed","number of servers"];
- vpnlist["ZE"]=['Zenmate VPN',"security" , "Internet_speed","number of servers"];
- vpnlist["BSM"]=['Bittium SafeMode Mobile VPN',"security" , "Internet_speed","number of servers"];
- vpnlist["RIPS"]=['Radio IP software',"security" , "Internet_speed","number of servers"];
- vpnlist["WIN"]=['Windscribe',"security" , "Internet_speed","number of servers"];
- vpnlist["P81"]=['Perimeter81',"security" , "Internet_speed","number of servers"];
- vpnlist["NL"]=['NordLayer',"security" , "Internet_speed","number of servers"];
-
+ vpnlist["Exp"] = ['Express VPN',6 , 9,8];
+ vpnlist["Nor"]=['Nord VPN',10 ,8 ,9];
+ vpnlist["CG"]=['CyberGhost',8 , 10,10];
+ vpnlist["SU"]=['Surfsshark VPN',9 , 8,8];
+ vpnlist["PIA"]=[' Privateinternetaccess',8 , 6,10];
+ vpnlist["IP"]=['Ipvanish VPN',8 , 9,8];
+ vpnlist["VY"]=['Vyper VPN',7 , 7,6];
+ vpnlist["STR"]=['Strong VPN',6 , 10,6];
+ vpnlist["TO"]=['Tourguard VPN',9 , 8,8];
+ vpnlist["PRO"]=['Proton VPN',8 , 5,8];
+ vpnlist["PRI"]=['Private VPN',8 , 3,4];
+ vpnlist["TB"]=['Tunel Bear',7 , 2,8];
+ vpnlist["WI"]=['Windscribe VPN',5 , 5,5];
+ vpnlist["ZE"]=['Zenmate VPN',3 , 2,8];
+ vpnlist["BSM"]=['Bittium SafeMode Mobile VPN',5 , 4,3];
+ vpnlist["RIPS"]=['Radio IP software',3 , 3,2];
+ vpnlist["P81"]=['Perimeter81',6 , 5,6];
+ vpnlist["NL"]=['NordLayer',5 , 4,1];
 function GetValue() {
 var vpn1 = document.getElementById("list").value;
 var vpn2 = document.getElementById("list2").value;
 var data1 = vpnlist[vpn1];
 var data2 = vpnlist[vpn2];
 
+
 document.querySelector('.title_left').textContent = data1[0];
 document.querySelector('.title_right').textContent = data2[0];
 
 document.querySelector('.content_left .secutiry_fillment').style.width = data1[1] + '0%';
+if (data1[1]<3) {document.querySelector('.content_left .secutiry_fillment').style.backgroundColor = "red";}
+else {document.querySelector('.content_left .secutiry_fillment').style.backgroundColor = "green";}
+
 document.querySelector('.content_left .intspeed_fillment').style.width = data1[2] + '0%';
+if (data1[2]<3) {document.querySelector('.content_left .intspeed_fillment').style.backgroundColor = "red";console.log("red");}
+else {document.querySelector('.content_left .intspeed_fillment').style.backgroundColor = "green";}
+
 document.querySelector('.content_left .num_of_servers_fillment').style.width = data1[3] + '0%';
+if (data1[3]<3) {document.querySelector('.content_left .num_of_servers_fillment').style.backgroundColor = "red";}
+else {document.querySelector('.content_left .num_of_servers_fillment').style.backgroundColor = "green";}
+
 document.querySelector('.content_right .secutiry_fillment').style.width = data2[1] + '0%';
+if (data2[1]<3) {document.querySelector('.content_right .secutiry_fillment').style.backgroundColor = "red";}
+else {document.querySelector('.content_right  .secutiry_fillment').style.backgroundColor = "green";}
+
 document.querySelector('.content_right .intspeed_fillment').style.width = data2[2] + '0%';
+if (data2[2]<3) {document.querySelector('.content_right  .intspeed_fillment').style.backgroundColor = "red";}
+else {document.querySelector('.content_right  intspeed_fillment').style.backgroundColor = "green";}
+
 document.querySelector('.content_right .num_of_servers_fillment').style.width = data2[3] + '0%';
+if (data2[3]<3) {document.querySelector('.content_right  .num_of_servers_fillment').style.backgroundColor = "red";}
+else {document.querySelector('.content_right  .num_of_servers_fillment').style.backgroundColor = "green";}
 } 
