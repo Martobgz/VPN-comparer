@@ -1,0 +1,29 @@
+body{
+    height: 125vh;
+    width: 100%;
+    background: linear-gradient(to top,mediumpurple,purple);
+}
+.tut{
+    padding-top: 250px;
+    padding-left: 10px;
+    text-align: center;
+    }
+    .termin{
+        padding-left: 10px;
+    }
+    .logo_size{
+        height: 150px;
+        width: 128px;
+    }
+    p{
+        color: white;
+    }
+    .definition{
+        font-size: 30px;
+    }
+    .tut_size{
+        font-size: 25px;
+    }
+    .termin_size{
+        font-size: 20px;
+    }
