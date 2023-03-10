@@ -11,10 +11,13 @@
 .number_of_servers_graph {
     margin-top:30px;
 }
-.secutiry_fillment {
+.secutiry_fillment,
+.num_of_servers_fillment,
+.intspeed_fillment
+ {
     background: red;
     height: 100%;
-    width: 30%;
+    width: 0%;
     position: absolute;
 }
 
