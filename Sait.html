@@ -8,7 +8,7 @@
 </style>
 </head>
 <body>
-<select id="list">
+<select id="list" onchange=Hide()>
   <option>Choose</option>
   <option value="Exp" >Express VPN</option>
   <option value="Nor">Nord VPN</option>
@@ -47,13 +47,23 @@
 function Hide2()
 {
  var hide2 =document.getElementById("list2").selectedIndex;
- console.log (hide2);
  if(hide2 != ''){
   for(var i=0;i<list.length;i++)
   {
     document.getElementById("list").options[i].disabled=false;
   }
   document.getElementById("list").options[hide2].disabled=true
+ }
+}
+function Hide()
+{
+ var hide =document.getElementById("list").selectedIndex;
+ if(hide != ''){
+  for(var i=0;i<list.length;i++)
+  {
+    document.getElementById("list2").options[i].disabled=false;
+  }
+  document.getElementById("list2").options[hide].disabled=true
  }
 }
 </script>
